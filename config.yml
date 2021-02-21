@@ -1,8 +1,23 @@
 accounts:
-  - name: alice
-    coins: ["1000token", "100000000stake"]
-  - name: bob
-    coins: ["500token"]
+  - name: yjlee
+    coins: ["100000000000000000000yasu"]
 validator:
-  name: alice
-  staked: "100000000stake"
+  name: yjlee
+  staked: "100000000yasu"
+genesis:
+  chain_id: "beastheart-1"
+  app_state:
+    staking:
+      params:
+        bond_denom: "yasu"
+    mint:
+      params:
+        mint_denom: "yasu"
+    crisis:
+      constant_fee:
+        denom: "yasu"
+    gov:
+      deposit_params:
+        min_deposit:
+          - amount: "10000000"
+            denom: "yasu"
